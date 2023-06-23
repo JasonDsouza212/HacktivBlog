@@ -1,3 +1,4 @@
+@import url("form.css");
 div .container {
   padding: 10px;
   max-width: 800px;
@@ -51,3 +52,5 @@ header a {
     margin:10px 0;
     line-height: 1.4rem;
 }
+
+

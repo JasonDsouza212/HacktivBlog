@@ -1,17 +1,16 @@
 import { useState } from "react"
 
-function LoginPage(){
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    
+const Register = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleSubmit =  (e) => {
     e.preventDefault()
   }
 
   return (
-    <form className="login" onSubmit={handleSubmit}>
-      <h3>Log In</h3>
+    <form className="signup" onSubmit={handleSubmit} >
+      <h3>Register</h3>
       
       <label>Email address:</label>
       <input 
@@ -26,10 +25,10 @@ function LoginPage(){
         value={password} 
       />
 
-      <button >Log in</button>
+      <button  type="submit">Sign up</button>
       {/* {error && <div className="error">{error}</div>} */}
     </form>
   )
 }
 
-export default  LoginPage;
+export default Register
